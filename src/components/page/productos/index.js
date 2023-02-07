@@ -5,6 +5,7 @@ import { ProductoItem } from "./ProductoItem";
 export const ProductosList = () => {
   const value = useContext(DataContext);
   const [productos] = value.productos;
+  
   return (
     <>
       <h1 className="produ">PRODUCTOS</h1>
@@ -14,6 +15,7 @@ export const ProductosList = () => {
             key={producto.id}
             title={producto.title}
             image={producto.image}
+			
             category={producto.category}
             price={producto.price}
             id={producto.id}
